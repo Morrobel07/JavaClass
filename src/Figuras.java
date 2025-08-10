@@ -1,5 +1,5 @@
 
-public abstract class Figuras {
+abstract class Figuras {
 
     public abstract double CalcularArea();
 

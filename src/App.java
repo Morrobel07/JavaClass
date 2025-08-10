@@ -1,4 +1,6 @@
 
+import prueba.*;
+
 public class App {
 
     public static void main(String[] args) throws Exception {
@@ -21,6 +23,9 @@ public class App {
 
         Figuras hexagono = new Hexagono(6);
         System.out.println(hexagono.CalcularArea());
+
+        Suma suma = new Suma();
+        System.out.println(suma.Calcular(5, 10));
 
     }
 
