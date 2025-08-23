@@ -1,11 +1,11 @@
 package prueba;
 
-public class Suma {
+public  class Suma {
 
     private int a;
     private int b;
 
-    protected int Calcular() {
+    public  int Calcular(int a ,int b) {
         return a + b;
     }
 

@@ -3,6 +3,8 @@ abstract class Figuras {
 
     public abstract double CalcularArea();
 
+    public abstract double CalcularVolumnen();
+
 }
 
 class Circulo extends Figuras {
@@ -17,6 +19,12 @@ class Circulo extends Figuras {
     public double CalcularArea() {
         return Math.PI * area * area;
     }
+
+    @Override
+    public double CalcularVolumnen() {
+        return 4 / 3 * Math.PI * Math.pow(area, 3);
+    }
+
 }
 
 class Cuadrado extends Figuras {
@@ -31,6 +39,11 @@ class Cuadrado extends Figuras {
     public double CalcularArea() {
         return lado * lado;
 
+    }
+
+    @Override
+    public double CalcularVolumnen() {
+        return lado * lado * lado;
     }
 
 }
@@ -50,6 +63,11 @@ class Rectangulo extends Figuras {
         return base * altura;
     }
 
+    @Override
+    public double CalcularVolumnen() {
+        return base * altura * altura;
+    }
+
 }
 
 class Hexagono extends Figuras {
@@ -64,6 +82,11 @@ class Hexagono extends Figuras {
     public double CalcularArea() {
         return (3 * Math.sqrt(3) * Math.pow(lado, 2)) / 2;
 
+    }
+
+    @Override
+    public double CalcularVolumnen() {
+        return (3 * Math.sqrt(3) * Math.pow(lado, 3)) / 2;
     }
 
 }
